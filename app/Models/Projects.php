@@ -15,6 +15,6 @@ class Projects extends Model
         "project_image",
         "keywords",
         "github_url",
-        "google_play_url"
+        "google_play_url",
     ];
 }

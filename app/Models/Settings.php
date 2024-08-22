@@ -21,6 +21,6 @@ class Settings extends Model
         "github_url",
         "stack_overflow_url",
         "linkedin_url",
-        "google_play_url"
+        "google_play_url",
     ];
 }

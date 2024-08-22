@@ -13,6 +13,6 @@ class Education extends Model
         "education_name",
         "education_location",
         "education_year",
-        "education_description"
+        "education_description",
     ];
 }

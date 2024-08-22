@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string("first_greek_name")->nullable();
             $table->string("last_name")->nullable();
             $table->string("job_title")->nullable();
-            $table->integer("age")->nullable();
             $table->string("location")->nullable();
             $table->integer("phone")->nullable();
             $table->string("email")->nullable();

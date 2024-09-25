@@ -1,5 +1,7 @@
 export default function Home() {
-    return <>
-    <h1>My portfolio site.</h1>
-    </>
+    return (
+        <>
+            <h1>Hey user</h1>
+        </>
+    );
 }

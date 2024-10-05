@@ -9,3 +9,12 @@
 		font-family: "Fira Code", monospace;
 	}
 }
+
+@layer components {
+	.home-page-text {
+		@apply my-6 text-center;
+		font-weight: 400;
+		font-optical-sizing: auto;
+		font-size: 5.3331rem;
+	}
+}

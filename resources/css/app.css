@@ -5,6 +5,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 @layer base {
+	html, body, #app, #app>div {
+		height: 100%;
+	}
+
 	body {
 		font-family: "Fira Code", monospace;
 	}
@@ -17,5 +21,9 @@
 		font-optical-sizing: auto;
 		font-size: 2.6669rem;
 		color: #f0f0f0;
+	}
+
+	.main-content {
+		@apply flex items-center justify-center;
 	}
 }

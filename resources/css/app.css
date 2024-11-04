@@ -2,21 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @layer base {
 	html, body, #app, #app>div {
 		height: 100%;
-	}
-
-	body {
-		font-family: "Fira Code", monospace;
 	}
 }
 
 @layer components {
 	.home-page-text {
 		@apply my-6 text-center;
+		font-family: "Fira Code", monospace;
 		font-weight: 400;
 		font-optical-sizing: auto;
 		font-size: 2.6669rem;
@@ -25,5 +22,37 @@
 
 	.main-content {
 		@apply flex items-center justify-center;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		width: 100%;
+	}
+
+	.nav-bar {
+		@apply flex justify-between items-center pt-6 pr-6 pl-6;
+	}
+
+	.nav-bar-menu-buttons {
+		@apply space-x-7 flex;
+	}
+
+	.nav-bar-menu-font {
+		font-weight: 700;
+		font-family: "Nunito", sans-serif;
+		font-optical-sizing: auto;
+		font-size: 1.1000rem;
+		font-style: normal;
+		letter-spacing: 0.07em;
+		color: #f0f0f0;
+	}
+
+	.nav-bar-person-name-text {
+		font-weight: 400;
+		font-family: "Nunito", sans-serif;
+		font-optical-sizing: auto;
+		font-size: 1.1000rem;
+		font-style: normal;
+		color: #f0f0f0;
 	}
 }

@@ -25,6 +25,11 @@
 
 	.main-content {
 		@apply flex items-center justify-center;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		bottom: 50%;
+		width: 100%;
 	}
 
 	.nav-bar-menu-buttons {

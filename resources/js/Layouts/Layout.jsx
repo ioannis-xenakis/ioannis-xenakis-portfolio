@@ -11,7 +11,7 @@ export default function Layout({children}) {
                 </nav>
             </header>
 
-            <main>
+            <main className="main-content">
                 {children}
             </main>
         </>

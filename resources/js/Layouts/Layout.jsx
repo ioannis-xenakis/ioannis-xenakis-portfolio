@@ -3,9 +3,11 @@ export default function Layout({children}) {
         <>
             <header>
                 <nav>
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/projects">Projects</a>
+                    <div className="nav-bar-menu-buttons">
+                        <a className="nav-bar-menu-font" href="/">Home</a>
+                        <a className="nav-bar-menu-font" href="/about">About</a>
+                        <a className="nav-bar-menu-font" href="/projects">Projects</a>
+                    </div>
                 </nav>
             </header>
 

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 @layer base {
 	html, body, #app, #app>div {
@@ -25,5 +25,19 @@
 
 	.main-content {
 		@apply flex items-center justify-center;
+	}
+
+	.nav-bar-menu-buttons {
+		@apply space-x-7 flex justify-end pt-6 pr-6;
+	}
+
+	.nav-bar-menu-font {
+		font-weight: 700;
+		font-family: "Nunito", sans-serif;
+		font-optical-sizing: auto;
+		font-size: 1.1000rem;
+		font-style: normal;
+		letter-spacing: 0.07em;
+		color: #f0f0f0;
 	}
 }

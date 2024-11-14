@@ -12,7 +12,7 @@
 
 @layer components {
 	.home-page-text {
-		@apply my-6 text-center;
+		@apply my-6 text-left;
 		font-family: "Fira Code", monospace;
 		font-weight: 400;
 		font-optical-sizing: auto;
@@ -54,5 +54,9 @@
 		font-size: 1.1000rem;
 		font-style: normal;
 		color: #f0f0f0;
+	}
+
+	.blue-text {
+		color: #518eff;
 	}
 }

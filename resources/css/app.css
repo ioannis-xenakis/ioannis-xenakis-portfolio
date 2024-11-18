@@ -11,7 +11,7 @@
 
 @layer components {
 	.home-page-text {
-		@apply my-6 text-left;
+		@apply text-left;
 		font-family: "Fira Code", monospace;
 		font-weight: 400;
 		font-optical-sizing: auto;
@@ -57,5 +57,13 @@
 
 	.blue-text {
 		color: #518eff;
+	}
+
+	.im-john-box {
+		@apply flex items-center justify-center;
+	}
+
+	.terminal-icon {
+		@apply self-start mt-6 mr-6;
 	}
 }

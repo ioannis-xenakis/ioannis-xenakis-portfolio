@@ -60,7 +60,9 @@
 	}
 
 	.im-john-box {
-		@apply flex items-center justify-center;
+		@apply flex items-center justify-center outline-4 outline pr-6 pl-8;
+		border-radius: 3rem;
+		outline-color: #f0f0f0;
 	}
 
 	.terminal-icon {

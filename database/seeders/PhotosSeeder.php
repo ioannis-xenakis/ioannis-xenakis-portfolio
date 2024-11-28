@@ -2,7 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Photos;
+// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class PhotosSeeder extends Seeder
@@ -12,6 +13,9 @@ class PhotosSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        Photos::factory()->create([
+            'photo_name' => 'John Xenakis photo 1',
+            'photo_url' => 'storage/images/john_xenakis_photo.jpg',
+        ]);
     }
 }

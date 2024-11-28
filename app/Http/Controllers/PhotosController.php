@@ -40,7 +40,7 @@ class PhotosController extends Controller
         return inertia('Home', [
             'photo' => $photos->only(
                 'photo_name',
-                'photo'
+                'photo_url'
             ),
         ]);
     }

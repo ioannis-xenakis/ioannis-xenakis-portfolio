@@ -13,7 +13,8 @@ class PhotosController extends Controller
      */
     public function index()
     {
-        //
+        $photos = Photos::findOrFail(1);
+        return inertia('Home', ['photos' => $photos]);
     }
 
     /**
@@ -38,34 +39,7 @@ class PhotosController extends Controller
     public function show(Photos $photos)
     {
         return inertia('Home', [
-            'photo' => $photos->only(
-                'photo_name',
-                'photo_url'
-            ),
+            'photo' => 'test_photo',
         ]);
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
     }
 }

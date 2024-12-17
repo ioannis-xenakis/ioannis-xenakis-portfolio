@@ -15,7 +15,7 @@ class PhotosSeeder extends Seeder
     {
         Photos::factory()->create([
             'photo_name' => 'John Xenakis photo 1',
-            'photo_url' => 'storage\images\john_xenakis_photo.jpg',
+            'photo_url' => 'storage/images/john_xenakis_photo.jpg',
         ]);
     }
 }

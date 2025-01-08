@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Photos;
-use Inertia\Inertia;
+use App\Models\Settings;
 
 class HomePageController extends Controller
 {
@@ -12,7 +12,12 @@ class HomePageController extends Controller
      */
     public function index()
     {
-        $photos = Photos::findOrFail(1);
-        return inertia('Home', ['photos' => $photos]);
+        $photo = Photos::findOrFail(1);
+        $setting = Settings::findOrFail(1);
+
+        return inertia('Home', [
+            'photo' => $photo,
+            'setting' => $setting,
+        ]);
     }
 }

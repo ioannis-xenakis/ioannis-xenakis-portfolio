@@ -22,6 +22,9 @@ export default function Home({ photo, setting }) {
                 </div>
             </div>
             <div className="job-title">
+                <div className="terminal-icon">
+                    <TerminalIcon />
+                </div>
                 <h1 className="home-page-text">
                     I'm an {setting.job_title}
                 </h1>

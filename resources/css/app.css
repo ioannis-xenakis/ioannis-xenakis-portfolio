@@ -85,4 +85,8 @@
         color: #f0f0f0;
         outline-color: #f0f0f0;
     }
+
+	.job-title {
+		@apply flex flex-row;
+	}
 }

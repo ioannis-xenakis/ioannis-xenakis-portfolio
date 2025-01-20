@@ -72,7 +72,7 @@
     }
 
     .terminal-icon {
-        @apply self-start mt-6 mr-6;
+        @apply self-start mt-5 mr-6;
     }
 
     .john-photo {

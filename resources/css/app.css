@@ -86,7 +86,9 @@
         outline-color: #f0f0f0;
     }
 
-	.job-title {
-		@apply flex flex-row;
-	}
+    .job-title {
+        @apply flex flex-row items-center outline-4 outline pr-6 pl-8;
+        border-radius: 3rem;
+        outline-color: #f0f0f0;
+    }
 }

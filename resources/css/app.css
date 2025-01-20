@@ -1,85 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 @tailwind base;
 @tailwind components;
 
 @layer base {
-	html, body, #app, #app>div {
-		height: 100%;
-	}
+    html,
+    body,
+    #app,
+    #app > div {
+        height: 100%;
+    }
 }
 
 @layer components {
-	.home-page-text {
-		@apply text-left;
-		font-family: "Fira Code", monospace;
-		font-weight: 400;
-		font-optical-sizing: auto;
-		font-size: 2.6669rem;
-		color: #f0f0f0;
-	}
+    .home-page-text {
+        @apply text-left;
+        font-family: "Fira Code", monospace;
+        font-weight: 400;
+        font-optical-sizing: auto;
+        font-size: 2.6669rem;
+        color: #f0f0f0;
+    }
 
-	.main-content {
-		@apply flex flex-col items-center justify-center space-y-14;
-		text-align: center;
-		position: absolute;
-		top: 50%;
-		bottom: 50%;
-		width: 100%;
-	}
+    .main-content {
+        @apply flex flex-col items-center justify-center space-y-14;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        bottom: 50%;
+        width: 100%;
+    }
 
-	.nav-bar {
-		@apply flex justify-between items-center pt-6 pr-6 pl-6;
-	}
+    .nav-bar {
+        @apply flex justify-between items-center pt-6 pr-6 pl-6;
+    }
 
-	.nav-bar-menu-buttons {
-		@apply space-x-7 flex;
-	}
+    .nav-bar-menu-buttons {
+        @apply space-x-7 flex;
+    }
 
-	.nav-bar-menu-font {
-		font-weight: 700;
-		font-family: "Nunito", sans-serif;
-		font-optical-sizing: auto;
-		font-size: 1.1000rem;
-		font-style: normal;
-		letter-spacing: 0.07em;
-		color: #f0f0f0;
-	}
+    .nav-bar-menu-font {
+        font-weight: 700;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 1.1rem;
+        font-style: normal;
+        letter-spacing: 0.07em;
+        color: #f0f0f0;
+    }
 
-	.nav-bar-person-name-text {
-		font-weight: 400;
-		font-family: "Nunito", sans-serif;
-		font-optical-sizing: auto;
-		font-size: 1.1000rem;
-		font-style: normal;
-		color: #f0f0f0;
-	}
+    .nav-bar-person-name-text {
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 1.1rem;
+        font-style: normal;
+        color: #f0f0f0;
+    }
 
-	.blue-text {
-		color: #518eff;
-	}
+    .blue-text {
+        color: #518eff;
+    }
 
-	.photo-imjohn-group {
-		@apply flex items-center justify-center space-x-14;
-	}
+    .photo-imjohn-group {
+        @apply flex items-center justify-center space-x-14;
+    }
 
-	.im-john-box {
-		@apply flex items-center justify-center outline-4 outline pr-6 pl-8;
-		border-radius: 3rem;
-		outline-color: #f0f0f0;
-	}
+    .im-john-box {
+        @apply flex items-center justify-center outline-4 outline pr-6 pl-8;
+        border-radius: 3rem;
+        outline-color: #f0f0f0;
+    }
 
-	.terminal-icon {
-		@apply self-start mt-6 mr-6;
-	}
+    .terminal-icon {
+        @apply self-start mt-6 mr-6;
+    }
 
-	.john-photo {
-		@apply content-center h-[7.5rem] w-[7.5rem] rounded-full outline outline-4;
-		text-align: center;
-		font-weight: 400;
-		font-family: 'Nunito', sans-serif;
-		font-size: 0.8rem;
-		color: #f0f0f0;
-		outline-color: #f0f0f0;
-	}
+    .john-photo {
+        @apply content-center h-[7.5rem] w-[7.5rem] rounded-full outline outline-4;
+        text-align: center;
+        font-weight: 400;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.8rem;
+        color: #f0f0f0;
+        outline-color: #f0f0f0;
+    }
 }

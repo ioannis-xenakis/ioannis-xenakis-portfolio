@@ -67,9 +67,8 @@
     }
 
     .im-john-box {
-        @apply flex items-center justify-center outline-4 outline pr-6 pl-8;
+        @apply flex items-center justify-center border-4 border-[#f0f0f0] pr-6 pl-8;
         border-radius: 3rem;
-        outline-color: #f0f0f0;
     }
 
     .terminal-icon {
@@ -77,18 +76,16 @@
     }
 
     .john-photo {
-        @apply content-center h-[7.5rem] w-[7.5rem] rounded-full outline outline-4;
+        @apply content-center h-[7.5rem] w-[7.5rem] rounded-full border-4 border-[#f0f0f0];
         text-align: center;
         font-weight: 400;
         font-family: "Nunito", sans-serif;
         font-size: 0.8rem;
         color: #f0f0f0;
-        outline-color: #f0f0f0;
     }
 
     .job-title {
-        @apply flex flex-row items-center outline-4 outline pr-6 pl-8;
+        @apply flex flex-row items-center pr-6 pl-8 border-4 border-[#f0f0f0];
         border-radius: 3rem;
-        outline-color: #f0f0f0;
     }
 }

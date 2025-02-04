@@ -88,4 +88,12 @@
         @apply flex flex-row items-center pr-6 pl-8 border-4 border-[#f0f0f0];
         border-radius: 3rem;
     }
+
+    .about-page-content {
+        @apply flex flex-col space-y-[3.5rem] mx-[1rem] my-[3.5rem] md:space-y-[4.5rem] md:my-[4.5rem] md:mx-[1.75rem];
+    }
+
+    .about-page-title {
+        @apply flex flex-row items-center justify-center;
+    }
 }

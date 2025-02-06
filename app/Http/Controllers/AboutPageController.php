@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Settings;
 
 class AboutPageController extends Controller
 {
@@ -11,6 +12,10 @@ class AboutPageController extends Controller
      */
     public function index()
     {
-        return inertia('About');
+        $setting = Settings::findOrFail(1);
+
+        return inertia('About', [
+            'setting' => $setting,
+        ]);
     }
 }

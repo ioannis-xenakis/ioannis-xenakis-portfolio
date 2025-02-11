@@ -20,6 +20,7 @@ class SettingsFactory extends Factory
             'first_english_name' => fake()->text(),
             'first_greek_name' => fake()->text(),
             'last_name' => fake()->text(),
+            'about_me_description' => fake()->text(),
             'job_title' => fake()->text(),
             'location' => fake()->text(),
             'phone' => fake()->text(),

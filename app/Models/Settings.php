@@ -12,6 +12,7 @@ class Settings extends Model
         "first_english_name",
         "first_greek_name",
         "last_name",
+        "about_me_description",
         "job_title",
         "location",
         "phone",

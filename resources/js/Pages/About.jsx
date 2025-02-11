@@ -10,6 +10,11 @@ export default function About({ setting }) {
                     <span className="blue-text">aboutMe</span>
                 </h2>
             </div>
+            <div className="about-page-description_and_photo">
+                <div className="about-page-description-group">
+                    <p className="main-text">{setting.about_me_description}</p>
+                </div>
+            </div>
         </div>
     );
 }

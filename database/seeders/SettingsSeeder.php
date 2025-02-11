@@ -18,6 +18,7 @@ class SettingsSeeder extends Seeder
             'first_english_name' => 'John',
             'first_greek_name' => 'Ioannis',
             'last_name' => 'Xenakis',
+            'about_me_description' => 'I’m Ioannis Xenakis. Just call me John. I’m from Greece. I’m a self-taught Android App Developer but I’m open to anything(by the way, I’ve built this site, using Laravel).',
             'job_title' => 'Android App Developer',
             'location' => 'Piraeus, Attica, Greece',
             'phone' => '30 698 152 8515',

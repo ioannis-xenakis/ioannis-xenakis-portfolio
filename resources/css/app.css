@@ -105,4 +105,21 @@
         font-size: 2rem;
         color: #f0f0f0;
     }
+
+    .about-page-description-group {
+        @apply max-w-[27.69rem] items-center justify-center;
+    }
+
+    .about-page-description_and_photo {
+        @apply flex flex-row space-x-[1.06rem] items-center justify-center;
+    }
+
+    .main-text {
+        @apply text-left max-w-[27.69rem];
+        font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-optical-sizing: auto;
+        font-size: 1rem;
+        color: #f0f0f0;
+    }
 }

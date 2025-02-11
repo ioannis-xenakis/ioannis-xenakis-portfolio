@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string("first_english_name")->nullable();
             $table->string("first_greek_name")->nullable();
             $table->string("last_name")->nullable();
+            $table->string("about_me_description")->nullable();
             $table->string("job_title")->nullable();
             $table->string("location")->nullable();
             $table->string("phone")->nullable();

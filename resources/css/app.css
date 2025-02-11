@@ -76,7 +76,7 @@
     }
 
     .john-photo {
-        @apply content-center h-[7.5rem] w-[7.5rem] rounded-full border-4 border-[#f0f0f0];
+        @apply content-center h-[7.5rem] w-[7.5rem] min-w-min min-h-min rounded-full border-4 border-[#f0f0f0];
         text-align: center;
         font-weight: 400;
         font-family: "Nunito", sans-serif;
@@ -111,7 +111,7 @@
     }
 
     .about-page-description_and_photo {
-        @apply flex flex-row space-x-[1.06rem] items-center justify-center;
+        @apply flex flex-col-reverse space-y-[2.31rem] space-y-reverse items-center justify-center md:flex-row md:space-x-[2.31rem] md:space-y-0;
     }
 
     .main-text {

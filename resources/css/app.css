@@ -114,6 +114,14 @@
         @apply flex flex-col-reverse space-y-[2.31rem] space-y-reverse items-center justify-center md:flex-row md:space-x-[2.31rem] md:space-y-0;
     }
 
+    .about-page-personal-info {
+        @apply flex flex-wrap gap-[1.13rem] items-center justify-center;
+    }
+
+    .about-page-item {
+        @apply items-center justify-center border-[0.19rem] border-[#1bbb1e] rounded-[0.94rem] px-[1rem] py-[0.75rem];
+    }
+
     .main-text {
         @apply text-left max-w-[27.69rem];
         font-family: "Nunito", sans-serif;

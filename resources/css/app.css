@@ -122,6 +122,15 @@
         @apply items-center justify-center border-[0.19rem] border-[#1bbb1e] rounded-[0.94rem] px-[1rem] py-[0.75rem];
     }
 
+    .about-page-group-title-text {
+        @apply text-center tracking-[0.08em];
+        font-family: "Fira Mono", serif;
+        font-weight: 500;
+        font-optical-sizing: auto;
+        font-size: 2rem;
+        color: #f0f0f0;
+    }
+
     .main-text {
         @apply text-left max-w-[27.69rem];
         font-family: "Nunito", sans-serif;

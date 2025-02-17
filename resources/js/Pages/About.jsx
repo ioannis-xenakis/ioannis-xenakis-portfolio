@@ -59,6 +59,9 @@ export default function About({ setting, photo }) {
                     <span className="main-text">Pronouns: he/him/his</span>
                 </div>
             </div>
+            <div>
+                <h3 className="about-page-group-title-text">Tech Stack</h3>
+            </div>
         </div>
     );
 }

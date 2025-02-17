@@ -23,6 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             PhotosSeeder::class,
             SettingsSeeder::class,
+            TechStackSeeder::class,
         ]);
     }
 }

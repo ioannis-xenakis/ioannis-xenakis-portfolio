@@ -11,6 +11,6 @@ class TechStack extends Model
 
     protected $fillable = [
         "name",
-        "icon",
+        "icon_url",
     ];
 }

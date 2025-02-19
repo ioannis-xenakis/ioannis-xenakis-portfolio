@@ -78,6 +78,9 @@ export default function About({ setting, photo, techStack }) {
                     ))}
                 </div>
             </div>
+            <div className="about-page-group">
+                <h3 className="about-page-group-title-text">Contact</h3>
+            </div>
         </div>
     );
 }

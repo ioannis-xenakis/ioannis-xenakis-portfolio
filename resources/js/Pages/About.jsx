@@ -80,6 +80,10 @@ export default function About({ setting, photo, techStack }) {
             </div>
             <div className="about-page-group">
                 <h3 className="about-page-group-title-text">Contact</h3>
+                <p className="about-page-contact-description-text">
+                    Here’s my info if you want to contact me and all of the
+                    sites you can find me in.
+                </p>
             </div>
         </div>
     );

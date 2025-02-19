@@ -135,7 +135,7 @@
         @apply flex flex-col justify-center space-y-[1.56rem];
     }
 
-    .about-page-tech-stack-items {
+    .about-page-group-items {
         @apply flex flex-wrap gap-[1.13rem] items-center justify-center;
     }
 

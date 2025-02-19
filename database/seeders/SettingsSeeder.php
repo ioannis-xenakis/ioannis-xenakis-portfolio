@@ -21,14 +21,10 @@ class SettingsSeeder extends Seeder
             'about_me_description' => 'I’m Ioannis Xenakis. Just call me John. I’m from Greece. I’m a self-taught Android App Developer but I’m open to anything(by the way, I’ve built this site, using Laravel).',
             'job_title' => 'Android App Developer',
             'location' => 'Piraeus, Attica, Greece',
-            'phone' => '30 698 152 8515',
+            'phone' => '+306981528515',
             'email' => 'Xenakis.i.contact@gmail.com',
             'languages' => 'English, Greek',
             'birth_date' => Carbon::createFromFormat('d-m-Y', '22-11-1990'),
-            'github_url' => 'https://github.com/ioannis-xenakis',
-            'stack_overflow_url' => 'https://stackoverflow.com/users/7187975/john-xenakis',
-            'linkedin_url' => 'https://www.linkedin.com/in/john-xenakis-81647217a/',
-            'google_play_url' => 'https://play.google.com/store/apps/developer?id=Ioannis+Xenakis',
         ]);
     }
 }

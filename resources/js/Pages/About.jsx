@@ -1,6 +1,6 @@
 import InfoIcon from "../Assets/Info-Icon";
 
-export default function About({ setting, photo, techStack }) {
+export default function About({ setting, photo, techStack, contactItems }) {
     function getAge(dateString) {
         var today = new Date();
         var birthDate = new Date(dateString);
@@ -61,7 +61,7 @@ export default function About({ setting, photo, techStack }) {
             </div>
             <div className="about-page-group">
                 <h3 className="about-page-group-title-text">Tech Stack</h3>
-                <div className="about-page-tech-stack-items">
+                <div className="about-page-group-items">
                     {techStack.map((item) => (
                         <div className="about-page-item">
                             {item.icon_url !== "" && (
@@ -84,6 +84,26 @@ export default function About({ setting, photo, techStack }) {
                     Here’s my info if you want to contact me and all of the
                     sites you can find me in.
                 </p>
+                <div className="about-page-group-items">
+                    {contactItems.map((item) => (
+                        <a
+                            href={item.link_url}
+                            className="about-page-item"
+                            target="_blank"
+                        >
+                            {item.icon_location_url !== "" && (
+                                <img
+                                    className="about-page-item-icon"
+                                    src={item.icon_location_url}
+                                    onError={(e) =>
+                                        (e.target.style.display = "none")
+                                    }
+                                />
+                            )}
+                            <span className="main-text">{item.name}</span>
+                        </a>
+                    ))}
+                </div>
             </div>
         </div>
     );

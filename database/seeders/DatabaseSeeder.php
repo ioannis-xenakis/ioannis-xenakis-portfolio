@@ -24,6 +24,7 @@ class DatabaseSeeder extends Seeder
             PhotosSeeder::class,
             SettingsSeeder::class,
             TechStackSeeder::class,
+            ContactItemsSeeder::class,
         ]);
     }
 }

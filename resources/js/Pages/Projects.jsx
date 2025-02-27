@@ -1,7 +1,9 @@
 export default function Projects() {
     return (
         <div className="projects-page-content">
-            <h1>Projects</h1>
+            <div className="projects-page-title">
+                <h2 className="projects-page-title-text">Projects</h2>
+            </div>
         </div>
     );
 }

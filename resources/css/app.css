@@ -160,4 +160,17 @@
     .projects-page-content {
         @apply flex flex-col space-y-[3.5rem] mx-[1rem] my-[3.5rem] pb-6 md:space-y-[4.5rem] md:my-[4.5rem] md:mx-[1.75rem];
     }
+
+    .projects-page-title {
+        @apply flex flex-row space-x-[1.06rem] items-center justify-center;
+    }
+
+    .projects-page-title-text {
+        @apply text-left;
+        font-family: "Fira Mono", serif;
+        font-weight: 700;
+        font-optical-sizing: auto;
+        font-size: 2rem;
+        color: #f0f0f0;
+    }
 }

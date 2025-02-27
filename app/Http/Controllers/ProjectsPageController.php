@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Settings;
+
 class ProjectsPageController extends Controller
 {
     /**
@@ -9,6 +11,10 @@ class ProjectsPageController extends Controller
      */
     public function index()
     {
-        return inertia('Projects');
+        $setting = Settings::findOrFail(1);
+
+        return inertia('Projects', [
+            'setting' => $setting,
+        ]);
     }
 }

@@ -25,6 +25,7 @@ class DatabaseSeeder extends Seeder
             SettingsSeeder::class,
             TechStackSeeder::class,
             ContactItemsSeeder::class,
+            ProjectsSeeder::class,
         ]);
     }
 }

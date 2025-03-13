@@ -10,6 +10,8 @@ export default function Projects({ setting }) {
                     <span className="blue-text">projects</span>
                 </h2>
             </div>
+            <div className="projects-page-group">
+            </div>
         </div>
     );
 }

@@ -177,4 +177,12 @@
     .projects-page-group {
         @apply flex flex-wrap justify-center gap-[7.13rem];
     }
+
+    .project-item {
+        @apply flex flex-col items-center justify-center;
+    }
+
+    .project-item-image {
+        @apply max-w-[27.69rem] max-h-[27.69rem];
+    }
 }

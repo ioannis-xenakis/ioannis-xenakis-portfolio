@@ -18,6 +18,11 @@ export default function Projects({ setting, projects }) {
                             src={project.project_image_url}
                             alt="Project image"
                         />
+                        <div className="project-item-details">
+                            <h3 className="project-item-title">
+                                {project.project_name}
+                            </h3>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -179,10 +179,23 @@
     }
 
     .project-item {
-        @apply flex flex-col items-center justify-center;
+        @apply flex flex-col size-fit;
     }
 
     .project-item-image {
         @apply max-w-[27.69rem] max-h-[27.69rem];
+    }
+
+    .project-item-details {
+        @apply flex flex-col px-[0.88rem] py-[0.88rem] items-start justify-start;
+    }
+
+    .project-item-title {
+        @apply text-left tracking-[0.08em] items-center justify-center;
+        font-family: "Nunito", sans-serif;
+        font-weight: 700;
+        font-optical-sizing: auto;
+        font-size: 1.25rem;
+        color: #0C1049;
     }
 }

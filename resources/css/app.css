@@ -187,7 +187,7 @@
     }
 
     .project-item-details {
-        @apply flex flex-col px-[0.88rem] py-[0.88rem] items-start justify-start;
+        @apply flex flex-col max-w-[27.69rem] max-h-[27.69rem] px-[0.88rem] py-[0.88rem] items-start justify-start;
     }
 
     .project-item-title {
@@ -197,5 +197,14 @@
         font-optical-sizing: auto;
         font-size: 1.25rem;
         color: #0C1049;
+    }
+
+    .project-item-description {
+        @apply text-left;
+        font-family: "Nunito", sans-serif;
+        font-weight: 400;
+        font-optical-sizing: auto;
+        font-size: 1rem;
+        color: #353535;
     }
 }

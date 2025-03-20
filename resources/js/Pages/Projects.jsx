@@ -22,6 +22,9 @@ export default function Projects({ setting, projects }) {
                             <h3 className="project-item-title">
                                 {project.project_name}
                             </h3>
+                            <p className="project-item-description">
+                                {project.project_description}
+                            </p>
                         </div>
                     </div>
                 ))}

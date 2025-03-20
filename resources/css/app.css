@@ -180,6 +180,7 @@
 
     .project-item {
         @apply flex flex-col size-fit;
+        background-color: #f0f0f0;
     }
 
     .project-item-image {

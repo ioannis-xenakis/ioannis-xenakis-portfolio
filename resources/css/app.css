@@ -179,12 +179,12 @@
     }
 
     .project-item {
-        @apply flex flex-col size-fit;
+        @apply flex flex-col size-fit border-[#f0f0f0] border-[0.19rem] rounded-[0.94rem];
         background-color: #f0f0f0;
     }
 
     .project-item-image {
-        @apply max-w-[27.69rem] max-h-[27.69rem];
+        @apply max-w-[27.69rem] max-h-[27.69rem] rounded-t-[0.94rem];
     }
 
     .project-item-details {

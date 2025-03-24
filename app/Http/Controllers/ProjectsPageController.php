@@ -13,7 +13,18 @@ class ProjectsPageController extends Controller
     public function index()
     {
         $setting = Settings::findOrFail(1);
-        $projects = Projects::all();
+        $projects = Projects::all()->map(function ($project) {
+            return [
+                'project_name' => $project->project_name,
+                'project_description' => $project->project_description,
+                'project_image_url' => $project->project_image_url,
+                'keywords' => json_decode($project->keywords, true),
+                'github_icon_url' => $project->github_icon_url,
+                'google_play_icon_url' => $project->google_play_icon_url,
+                'github_url' => $project->github_url,
+                'google_play_url' => $project->google_play_url
+            ];
+        });
 
         return inertia('Projects', [
             'setting' => $setting,

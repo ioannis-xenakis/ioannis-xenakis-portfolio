@@ -11,7 +11,7 @@ export default function Projects({ setting, projects }) {
                 </h2>
             </div>
             <div className="projects-page-group">
-                {projects.map((project) => (
+                {projects.map((project, i) => (
                     <div className="project-item">
                         <img
                             className="project-item-image"
@@ -25,6 +25,18 @@ export default function Projects({ setting, projects }) {
                             <p className="project-item-description">
                                 {project.project_description}
                             </p>
+                            <div className="project-item-techs">
+                                {project.keywords.map((keyword, index) => {
+                                    return (
+                                        <div
+                                            key={index}
+                                            className="project-item-tech"
+                                        >
+                                            {keyword.name}
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         </div>
                     </div>
                 ))}

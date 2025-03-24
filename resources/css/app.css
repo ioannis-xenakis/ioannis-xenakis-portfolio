@@ -188,7 +188,7 @@
     }
 
     .project-item-details {
-        @apply flex flex-col max-w-[27.69rem] max-h-[27.69rem] px-[0.88rem] py-[0.88rem] items-start justify-start;
+        @apply flex flex-col max-w-[27.69rem] max-h-[27.69rem] px-[0.88rem] py-[0.88rem] gap-[0.88rem] items-start justify-start;
     }
 
     .project-item-title {
@@ -207,5 +207,18 @@
         font-optical-sizing: auto;
         font-size: 1rem;
         color: #353535;
+    }
+
+    .project-item-techs {
+        @apply flex flex-wrap gap-[0.50rem] items-start justify-start;
+    }
+
+    .project-item-tech {
+        @apply text-left px-[1.00rem] py-[0.19rem] border-[#457ad0] border-[0.13rem] tracking-[0.08em] rounded-[0.75rem] items-start justify-start;
+        font-family: "Nunito", sans-serif;
+        font-weight: 500;
+        font-optical-sizing: auto;
+        font-size: 0.94rem;
+        color: #457ad0;
     }
 }

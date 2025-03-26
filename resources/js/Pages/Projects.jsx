@@ -37,6 +37,24 @@ export default function Projects({ setting, projects }) {
                             <p className="project-item-description">
                                 {project.project_description}
                             </p>
+                            <div className="project-item-links">
+                                {project.github_url !== "" && (
+                                    <a
+                                        href={project.github_url}
+                                        target="_blank"
+                                    >
+                                        <img
+                                            className="project-item-link-icon"
+                                            src={project.github_icon_url}
+                                            alt="Github icon"
+                                            onError={(e) =>
+                                                (e.target.style.display =
+                                                    "none")
+                                            }
+                                        />
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </div>
                 ))}

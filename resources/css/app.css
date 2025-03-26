@@ -222,6 +222,10 @@
         color: #457ad0;
     }
 
+    .project-item-links {
+        @apply flex flex-row gap-[0.50rem] items-center justify-start;
+    }
+
     .project-item-link-icon {
         @apply border-slate-300 border-[0.13rem] hover:border-[#457ad0] hover:bg-slate-300 rounded-[0.75rem] px-[0.19rem] py-[0.19rem] items-center justify-center;
     }

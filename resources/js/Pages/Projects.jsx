@@ -54,6 +54,22 @@ export default function Projects({ setting, projects }) {
                                         />
                                     </a>
                                 )}
+                                {project.google_play_url !== "" && (
+                                    <a
+                                        href={project.google_play_url}
+                                        target="_blank"
+                                    >
+                                        <img
+                                            className="project-item-link-icon"
+                                            src={project.google_play_icon_url}
+                                            alt="Google Play icon"
+                                            onError={(e) =>
+                                                (e.target.style.display =
+                                                    "none")
+                                            }
+                                        />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     </div>

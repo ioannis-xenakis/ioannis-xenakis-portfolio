@@ -25,7 +25,7 @@ class ProjectsSeeder extends Seeder
             "github_icon_url" => "storage/images/github_icon_2.svg",
             "google_play_icon_url" => "storage/images/google_play_icon_2.svg",
             "github_url" => "https://github.com/ioannis-xenakis/MyNotie",
-            "google_play_url" => "https://play.google.com/store/apps/details?id=com.xenakis.my_notie"
+            "google_play_url" => "https://play.google.com/store/apps/details?id=com.code_that_up.john_xenakis.my_notie"
         ]);
 
         Projects::factory()->create([
@@ -41,7 +41,7 @@ class ProjectsSeeder extends Seeder
             "github_icon_url" => "storage/images/github_icon_2.svg",
             "google_play_icon_url" => "storage/images/google_play_icon_2.svg",
             "github_url" => "https://github.com/ioannis-xenakis/jokester",
-            "google_play_url" => "https://play.google.com/store/apps/details?id=com.xenakis.jokester"
+            "google_play_url" => "https://play.google.com/store/apps/details?id=com.john_xenakis.jokester"
         ]);
 
         Projects::factory()->create([

@@ -40,6 +40,7 @@
     }
 
     .nav-bar-menu-font {
+        @apply py-2 px-3 hover:bg-slate-700 rounded-[0.94rem];
         font-weight: 700;
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;

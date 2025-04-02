@@ -122,6 +122,10 @@
         @apply flex flex-row items-center justify-center border-[0.19rem] border-[#1bbb1e] rounded-[0.94rem] space-x-[0.38rem] px-[1rem] py-[0.75rem];
     }
 
+    .about-page-link-button {
+        @apply flex flex-row items-center justify-center hover:border-[#457ad0] hover:bg-slate-700 border-[0.19rem] border-[#1bbb1e] rounded-[0.94rem] space-x-[0.38rem] px-[1rem] py-[0.75rem];
+    }
+
     .about-page-group-title-text {
         @apply text-center tracking-[0.08em];
         font-family: "Fira Mono", serif;

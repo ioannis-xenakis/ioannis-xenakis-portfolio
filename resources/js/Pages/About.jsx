@@ -88,7 +88,7 @@ export default function About({ setting, photo, techStack, contactItems }) {
                     {contactItems.map((item) => (
                         <a
                             href={item.link_url}
-                            className="about-page-item"
+                            className="about-page-link-button"
                             target="_blank"
                         >
                             {item.icon_location_url !== "" && (

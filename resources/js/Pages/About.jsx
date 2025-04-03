@@ -59,11 +59,11 @@ export default function About({ setting, photo, techStack, contactItems }) {
                     <span className="main-text">Pronouns: he/him/his</span>
                 </div>
             </div>
-            <div className="about-page-group">
-                <h3 className="about-page-group-title-text">Tech Stack</h3>
-                <div className="about-page-group-items">
+            <div className="about-page-group" key={"techStackGroup"}>
+                <h3 className="about-page-group-title-text" key={"techStackTitle"}>Tech Stack</h3>
+                <div className="about-page-group-items" key="techStackItems">
                     {techStack.map((item) => (
-                        <div className="about-page-item">
+                        <div className="about-page-item" key={item.name}>
                             {item.icon_url !== "" && (
                                 <img
                                     className="about-page-item-icon"
@@ -84,12 +84,13 @@ export default function About({ setting, photo, techStack, contactItems }) {
                     Here’s my info if you want to contact me and all of the
                     sites you can find me in.
                 </p>
-                <div className="about-page-group-items">
-                    {contactItems.map((item) => (
+                <div className="about-page-group-items" key="contactItems">
+                    {contactItems.map((item, index) => (
                         <a
                             href={item.link_url}
                             className="about-page-link-button"
                             target="_blank"
+                            key={item.name + index}    
                         >
                             {item.icon_location_url !== "" && (
                                 <img
@@ -98,9 +99,10 @@ export default function About({ setting, photo, techStack, contactItems }) {
                                     onError={(e) =>
                                         (e.target.style.display = "none")
                                     }
+                                    key={item.id} 
                                 />
                             )}
-                            <span className="main-text">{item.name}</span>
+                            <span className="main-text" key={item.name}>{item.name}</span>
                         </a>
                     ))}
                 </div>

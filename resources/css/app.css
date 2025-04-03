@@ -40,7 +40,7 @@
     }
 
     .nav-bar-menu-font {
-        @apply py-2 px-3 hover:bg-slate-700 rounded-[0.94rem];
+        @apply py-2 px-3 hover:bg-slate-700 border-[0.19rem] border-transparent rounded-[0.94rem];
         font-weight: 700;
         font-family: "Nunito", sans-serif;
         font-optical-sizing: auto;
@@ -48,6 +48,10 @@
         font-style: normal;
         letter-spacing: 0.07em;
         color: #f0f0f0;
+    }
+
+    .nav-bar-menu-font.active {
+        @apply bg-slate-700 border-[#1bbb1e];
     }
 
     .nav-bar-person-name-text {

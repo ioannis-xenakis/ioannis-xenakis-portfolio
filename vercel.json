@@ -4,7 +4,6 @@
     "functions": {
         "api/index.php": { "runtime": "vercel-php@0.6.0" }
     },
-    "buildCommand": "npm install && npm run build && cp -r storage/app/public public/storage",
     "routes": [
         {
             "src": "^/(build|js|css|images|storage)/(.*)",
